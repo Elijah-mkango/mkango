@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>LIONS Smath</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="calc">
+    <div class="header">
+      <div class="brand">LIONSMADE Secondary Scientific Calculator</div>
+      <div class="mode">
+        Angle:
+        <div class="toggle" id="angleToggle">
+          <button data-mode="DEG" class="active">DEG</button>
+          <button data-mode="RAD">RAD</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="display">
+      <div class="expr" id="expr"></div>
+      <div class="result" id="result">0</div>
+    </div>
+
+    <div class="keys" id="keys">
+      <!-- All your calculator buttons -->
+      <button class="key fn" data-k="MC">MC</button>
+      <button class="key fn" data-k="MR">MR</button>
+      <button class="key fn" data-k="M+">M+</button>
+      <button class="key fn" data-k="M-">M-</button>
+      <button class="key fn" data-k="ANS">Ans</button>
+      <button class="key clear" data-k="AC">AC</button>
+      <button class="key fn" data-k="(">(</button>
+      <button class="key fn" data-k=")">)</button>
+      <button class="key fn" data-k="!">n!</button>
+      <button class="key fn" data-k="√">√</button>
+      <button class="key fn" data-k="^">x^y</button>
+      <button class="key op" data-k="÷">÷</button>
+      <button class="key fn" data-k="sin">sin</button>
+      <button class="key fn" data-k="cos">cos</button>
+      <button class="key fn" data-k="tan">tan</button>
+      <button class="key fn" data-k="asin">sin⁻¹</button>
+      <button class="key fn" data-k="acos">cos⁻¹</button>
+      <button class="key fn" data-k="atan">tan⁻¹</button>
+      <button class="key fn" data-k="log">log</button>
+      <button class="key fn" data-k="ln">ln</button>
+      <button class="key fn" data-k="π">π</button>
+      <button class="key fn" data-k="e">e</button>
+      <button class="key fn" data-k="x²">x²</button>
+      <button class="key op" data-k="×">×</button>
+      <button class="key" data-k="7">7</button>
+      <button class="key" data-k="8">8</button>
+      <button class="key" data-k="9">9</button>
+      <button class="key fn" data-k="±">±</button>
+      <button class="key fn" data-k="%">%</button>
+      <button class="key op" data-k="-">−</button>
+      <button class="key" data-k="4">4</button>
+      <button class="key" data-k="5">5</button>
+      <button class="key" data-k="6">6</button>
+      <button class="key fn" data-k="x^-1">x⁻¹</button>
+      <button class="key fn" data-k="EXP">EXP</button>
+      <button class="key op" data-k="+">+</button>
+      <button class="key" data-k="1">1</button>
+      <button class="key" data-k="2">2</button>
+      <button class="key" data-k="3">3</button>
+      <button class="key fn" data-k="DEL">DEL</button>
+      <button class="key" data-k="0">0</button>
+      <button class="key" data-k=".">.</button>
+      <button class="key equal" data-k="=">=</button>
+    </div>
+
+    <div class="footer">Tip: Toggle DEG/RAD before using trig keys.</div>
+
+    <!-- Student Workspace -->
+    <div class="workspace">
+      <label for="studentWork">Student Working Space:</label>
+      <textarea id="studentWork" placeholder="Write your solution here..." rows="6"></textarea>
+    </div>
+  </div>
+
+  <!-- Link to external JS -->
+  <script src="script.js"></script>
+</body>
+</html>
